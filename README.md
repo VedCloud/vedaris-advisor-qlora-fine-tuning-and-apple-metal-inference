@@ -1,5 +1,10 @@
 # Vedaris Advisor QLoRA Fine-Tuning & Apple Metal Inference
 
+[![macOS · Apple Metal](https://img.shields.io/badge/macOS-Apple%20Metal-147EFB?style=flat-square&logo=apple&logoColor=white)](#native-macos-inference)
+[![Training · 4-bit QLoRA](https://img.shields.io/badge/Training-4--bit%20QLoRA-76B900?style=flat-square&logo=nvidia&logoColor=white)](#qlora-on-nvidia-t4)
+[![Model · 4B parameters](https://img.shields.io/badge/Model-4B%20parameters-6146D4?style=flat-square)](#measured-milestones)
+[![Checkpoint handoff · CUDA to Metal](https://img.shields.io/badge/Checkpoint%20handoff-CUDA%20to%20Metal-087E8B?style=flat-square)](#checkpoint-design-and-cuda-to-metal-handoff)
+
 Vedaris Advisor is a native macOS language-model application for AWS architecture and systems engineering. It runs a quantized 4-billion-parameter model on an M4 Mac mini using MLX and Metal. Its training workflow prepares domain documents for parameter-efficient adaptation and lets an interrupted run continue on a different GPU backend.
 
 The central engineering result was a working handoff from an NVIDIA T4 to Apple silicon. The CUDA run saved LoRA weights, a deterministic dataset cursor and the number of tokens processed. The Mac imported the adapter, resumed at example **3,916**, and saved a new checkpoint at example **4,146**.
