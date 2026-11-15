@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="20" role="img" aria-label="Handoff: CUDA to Metal">
+  <title>Handoff: CUDA to Metal</title>
+  <defs>
+    <clipPath id="corners"><rect width="144" height="20" rx="3"/></clipPath>
+    <linearGradient id="gloss" x2="0" y2="100%">
+      <stop stop-color="#fff" stop-opacity=".25"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".52" stop-opacity=".04"/>
+      <stop offset="1" stop-opacity=".22"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#corners)">
+    <path fill="#555" d="M0 0h56v20H0z"/>
+    <path fill="#800080" d="M56 0h88v20H56z"/>
+    <path fill="url(#gloss)" d="M0 0h144v20H0z"/>
+  </g>
+  <g font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">
+    <g fill="#000" opacity=".45" transform="translate(0 1)">
+      <text x="28.0" y="14">Handoff</text>
+      <text x="100.0" y="14">CUDA to Metal</text>
+    </g>
+    <g fill="#fff">
+      <text x="28.0" y="14">Handoff</text>
+      <text x="100.0" y="14">CUDA to Metal</text>
+    </g>
+  </g>
+</svg>

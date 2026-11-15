@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="163" height="20" role="img" aria-label="Monitoring: Live loss / ETA">
+  <title>Monitoring: Live loss / ETA</title>
+  <defs>
+    <clipPath id="corners"><rect width="163" height="20" rx="3"/></clipPath>
+    <linearGradient id="gloss" x2="0" y2="100%">
+      <stop stop-color="#fff" stop-opacity=".25"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".52" stop-opacity=".04"/>
+      <stop offset="1" stop-opacity=".22"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#corners)">
+    <path fill="#555" d="M0 0h71v20H0z"/>
+    <path fill="#806500" d="M71 0h92v20H71z"/>
+    <path fill="url(#gloss)" d="M0 0h163v20H0z"/>
+  </g>
+  <g font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">
+    <g fill="#000" opacity=".45" transform="translate(0 1)">
+      <text x="35.5" y="14">Monitoring</text>
+      <text x="117.0" y="14">Live loss / ETA</text>
+    </g>
+    <g fill="#fff">
+      <text x="35.5" y="14">Monitoring</text>
+      <text x="117.0" y="14">Live loss / ETA</text>
+    </g>
+  </g>
+</svg>

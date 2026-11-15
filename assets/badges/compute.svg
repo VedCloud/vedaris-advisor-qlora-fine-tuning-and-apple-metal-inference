@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134" height="20" role="img" aria-label="Compute: CUDA / FP16">
+  <title>Compute: CUDA / FP16</title>
+  <defs>
+    <clipPath id="corners"><rect width="134" height="20" rx="3"/></clipPath>
+    <linearGradient id="gloss" x2="0" y2="100%">
+      <stop stop-color="#fff" stop-opacity=".25"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".52" stop-opacity=".04"/>
+      <stop offset="1" stop-opacity=".22"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#corners)">
+    <path fill="#555" d="M0 0h58v20H0z"/>
+    <path fill="#007ec6" d="M58 0h76v20H58z"/>
+    <path fill="url(#gloss)" d="M0 0h134v20H0z"/>
+  </g>
+  <g font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">
+    <g fill="#000" opacity=".45" transform="translate(0 1)">
+      <text x="29.0" y="14">Compute</text>
+      <text x="96.0" y="14">CUDA / FP16</text>
+    </g>
+    <g fill="#fff">
+      <text x="29.0" y="14">Compute</text>
+      <text x="96.0" y="14">CUDA / FP16</text>
+    </g>
+  </g>
+</svg>

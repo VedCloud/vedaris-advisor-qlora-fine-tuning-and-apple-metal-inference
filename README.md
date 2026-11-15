@@ -1,9 +1,10 @@
-# Vedaris Advisor QLoRA Fine-Tuning & Apple Metal Inference
+# Vedaris Advisor LLM Training & Apple Metal Inference
 
-[![macOS · Apple Metal](https://img.shields.io/badge/macOS-Apple%20Metal-147EFB?style=flat-square&logo=apple&logoColor=white)](#native-macos-inference)
-[![Training · 4-bit QLoRA](https://img.shields.io/badge/Training-4--bit%20QLoRA-76B900?style=flat-square&logo=nvidia&logoColor=white)](#qlora-on-nvidia-t4)
-[![Model · 4B parameters](https://img.shields.io/badge/Model-4B%20parameters-6146D4?style=flat-square)](#measured-milestones)
-[![Checkpoint handoff · CUDA to Metal](https://img.shields.io/badge/Checkpoint%20handoff-CUDA%20to%20Metal-087E8B?style=flat-square)](#checkpoint-design-and-cuda-to-metal-handoff)
+[![Platform: macOS](assets/badges/platform.svg)](#native-macos-inference) [![Hardware: Apple M4](assets/badges/hardware.svg)](#native-macos-inference) [![UI: SwiftUI](assets/badges/ui.svg)](#native-macos-inference) [![Inference: MLX / Metal](assets/badges/inference.svg)](#native-macos-inference)<br>
+[![Model: 4B parameters](assets/badges/model.svg)](#measured-milestones) [![Context: 8,192 tokens](assets/badges/context.svg)](#measured-milestones) [![Generation: Streaming](assets/badges/generation.svg)](#measured-milestones) [![Execution: On device](assets/badges/execution.svg)](#measured-milestones)<br>
+[![Training: 4-bit NF4 QLoRA](assets/badges/training.svg)](#qlora-on-nvidia-t4) [![Adapter: Rank 8 / Alpha 16](assets/badges/adapter.svg)](#qlora-on-nvidia-t4) [![Training GPU: NVIDIA T4](assets/badges/training-gpu.svg)](#qlora-on-nvidia-t4) [![Compute: CUDA / FP16](assets/badges/compute.svg)](#qlora-on-nvidia-t4)<br>
+[![Corpus: 164,572 examples](assets/badges/corpus.svg)](#building-the-domain-corpus) [![Training data: 57.9M tokens](assets/badges/training-data.svg)](#building-the-domain-corpus) [![Validation: 3,610 examples](assets/badges/validation.svg)](#building-the-domain-corpus)<br>
+[![Handoff: CUDA to Metal](assets/badges/handoff.svg)](#checkpoint-design-and-cuda-to-metal-handoff) [![Checkpoint: 4,146 examples](assets/badges/checkpoint.svg)](#checkpoint-design-and-cuda-to-metal-handoff) [![Monitoring: Live loss / ETA](assets/badges/monitoring.svg)](#running-and-monitoring-a-session)
 
 Vedaris Advisor is a native macOS language-model application for AWS architecture and systems engineering. It runs a quantized 4-billion-parameter model on an M4 Mac mini using MLX and Metal. Its training workflow prepares domain documents for parameter-efficient adaptation and lets an interrupted run continue on a different GPU backend.
 
